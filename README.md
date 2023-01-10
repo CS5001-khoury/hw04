@@ -143,14 +143,20 @@ Submit your new `star_rating_app.py`
 
 Add (AG) and (MG) next to tiers, add major conditions to meet to pass each tier. 
 
-1. Learning ()
-   * 
-2. Approaching  ()
-   * 
-3. Meets  ()
-   * 
-4. Exceeds  ()
-   * 
+1. Learning (AG)
+   * number_magic works for evens and odds
+2. Approaching  (AG)
+   * number_magic works for basic number_string variations 
+3. Meets  (AG)
+   * number_magic handles more complex variations (invert at different max and numbers)
+   * trailing comma is handled correctly (not there)
+   * star_rating_app handles invalid input properly
+   * files pass python style checker
+1. Exceeds  (MG)
+   * files commented 
+   * README.md - reflection and further thinking added showing thought to the questions
+   * number_magic evens and odds call number_magic instead of duplicating code
+   * star_rating_app.run uses a while loop properly
 
 
 AG - Auto-graded  
@@ -159,6 +165,9 @@ MG - Manually graded
 
 ## 📚 Additional Resources
 * [pytutor.com](https://pythontutor.com/) - A good resource for visualizing code! This will especially help with answer the further thinking question. 
+* [w3schools Default Function Parameters](https://www.w3schools.com/python/gloss_python_function_default_parameter.asp)
+* [Python Tutorial Default Parameter](https://www.pythontutorial.net/python-basics/python-default-parameters/)
+
 
  ### isnumeric
  One function that can help you is  `isnumeric()`. For example
