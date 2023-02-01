@@ -18,14 +18,14 @@ For this part, you will write three functions. These functions are not an applic
 
 ```console
 >>> evens(10)
-'0,2,4,6,7,10'
+'0,2,4,6,8,10'
 >>> evens(20)
-'0,2,4,6,7,10,12,14,16,18,20'
+'0,2,4,6,8,10,12,14,16,18,20'
 ```
 It should also *default* to 10 is nothing is entered.
 ```console 
 >>> evens()
-'2,4,6,7,10'
+'2,4,6,8,10'
 ```
 
 ### Odds
