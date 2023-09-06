@@ -76,42 +76,7 @@ Additionally, if we want to change the delim (short for deliminator), from the d
 
 When we run our tests, we will first test with the default values, and then slowly update various options. **modify `test_number_magic.py`** it is missing some obvious tests! 
 
-## Part 2: Update Star Rating Application 
-
-Your client has come back to you, and requested more updates to Star Rating App. This is also a time for you to update the `run()` method so it is a bit more memory efficient.
-Your client has asked for the application to ask the client to enter a whole number, and then keep asking if they enter in anything else for the rating. The client said they don't care if it is in bounds or not (as that is already resolved by default 1 to 5 stars) - just that it is a positive whole number that gets entered. They have provided a sample run as an example of what they want to see. 
-
-```console
-> python -m star_rating.app
-What would you like to do (add, list, exit)? add
-Enter a movie: Jurassic Shark
-Enter a rating 1-5: -10 
-Must be a positive whole number.
-Enter a rating 1-5: 1.5
-Must be a positive whole number.
-Enter a rating 1-5: 1
-What would you like to do (add, list, exit)? add
-Enter a movie: Princess Bride
-Enter a rating 1-5: 100
-What would you like to do (add, list, exit)? add
-Enter a movie: The Good, The Bad, The Ugly
-Enter a rating 1-5: 3.14
-Must be a positive whole number.
-Enter a rating 1-5: sigh, never saw it, don't know what to rate it
-Must be a positive whole number.
-Enter a rating 1-5:
-Must be a positive whole number.
-Enter a rating 1-5:
-Must be a positive whole number.
-Enter a rating 1-5: ok fine
-Must be a positive whole number.
-Enter a rating 1-5: 3
-What would you like to do (add, list, exit)? list
-*      Jurassic Shark
-*****  Princess Bride
-***    The Good, The Bad, The Ugly
-What would you like to do (add, list, exit)? exit
-```
+## Part 2: 
 
 ### Add get_valid_int(prompt)
  👉🏽 **task**: Add function `get_valid_int(prompt)` that requests the user based on the prompt, and then keeps looping as long as the return value is not `numeric`. Will then return an integer `int()` of the input. 
@@ -123,20 +88,15 @@ You may want to check the section on `isnumeric` in the resources below.
 
  👉🏽 **task**: Update `get_rating()` to use your new `get_valid_int(prompt)`. 
 
- Most the other functions in `star_rating_app.py` remain the same from HW3! The only function you will update will be `run()`. 
 
-### update run()
-The `run()` function in HW3 called itself to keep the program running. This however is fairly inefficient, and now that you know loops you want to update it.
+## Part 3: README.md
 
-👉🏽 **task**: Rewrite the `run()` function to use a loop. Doing that it means you won't need the parameter, so it will become `def run():`
+👉🏽 **Task**: Answer the questions in the [README.md](../README.md) file. 
 
-Submit your new `star_rating_app.py`
+Make sure to answer the questions in the [README.md](../README.md) file.
 
-## Part 3:  Reflection and Further Thinking
+As always you are free to ask about the questions in MS Teams, including clarifications on the code. 
 
-1. Why would we want to use a loop instead of a function() to loop for this assignment? Please know there are *very* good reasons to use function calls which we will explore in Module 7. However, this assignment may be better using a loop for the run() function.  
-
-2. Take a moment to reflect on what you have learned, and what you need to work on. As a reminder, struggling is a sign of learning, so give yourself permission to struggle as that is giving yourself permission to learn! 
 
 ## 📝 Grading Rubric
 
@@ -162,9 +122,11 @@ Add (AG) and (MG) next to tiers, add major conditions to meet to pass each tier.
 AG - Auto-graded  
 MG - Manually graded
 
+### Submission Reminder 🚨
+For manually graded elements, we only guarantee time to submit for a regrade IF you submit by the DUE DATE. Submitting late may mean it isn't possible for the MG to be graded before the AVAILABLE BY DATE, removing any windows for your to resubmit in time. While it will be graded, it is always best to submit by the due date, so you have full opportunity to improve your grade.
 
 ## 📚 Additional Resources
-* [pytutor.com](https://pythontutor.com/) - A good resource for visualizing code! This will especially help with answer the further thinking question. 
+* [pytutor.com](https://pythontutor.com/) - A good resource for visualizing code!  
 * [w3schools Default Function Parameters](https://www.w3schools.com/python/gloss_python_function_default_parameter.asp)
 * [Python Tutorial Default Parameter](https://www.pythontutorial.net/python-basics/python-default-parameters/)
 
@@ -182,5 +144,3 @@ else:
 
 `isnumeric()` checks to make sure it is a *whole*, *positive* number. As such, -1 will return False, 3.14 will return False, while 1 or 3 will return True. You will want to consider using this as an option to 'validate' the input.
 
-
-Highlight each major component with a section, add  👉🏽 **task** for tasks and include 👉🏽 or something obvious so they can be found easily. 
