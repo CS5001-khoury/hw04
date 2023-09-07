@@ -8,7 +8,7 @@ Student:  UPDATE
 
 Tests A series of functions that deal with number manipulation and string concatenation 
 """
-from .number_magic import number_string, evens, odds
+from number_magic import number_string, evens, odds
 
 
 
