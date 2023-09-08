@@ -2,19 +2,19 @@
 
 For this assignment, we will explore error checking with while loops, and also ways to reuse functions focusing on 'abstraction' of concepts. To be successful, you will want to **DEVELOP INCREMENTALLY** meaning write a little at  time, and run your tests then write some more. 
 
-You will want to make sure you complete the Module 4 workshop before beginning this assignment. 
+You will want to make sure you complete the Module 4 Team Activity before beginning this assignment. 
 
 ## Part 1: Number Magic
-For this part, you will write three functions. These functions are not an application, but instead three functions that are being used by another 'application'. As such, it is really important to test those functions. We have provided the start of your tests in [test_number_magic.py](test_number_magic.py).
+For this part, you will write three functions. These functions are not an application, but instead three functions that are being used by another application. As such, it is really important to test those functions. We have provided the start of your tests in [test_number_magic.py](../test_number_magic.py).
 
-👉🏽 **task**: You you will write [number_magic.py](number_magic.py). The three functions needed are:
+👉🏽 **task**: You you will write [number_magic.py](../number_magic.py). The three functions needed are:
 
 1. evens(max)
 2. odds(max)
 3. number_string(number, max, invert, delim)
 
 ### Evens
-`evens()` returns a string of even numbers up to including max separated by commas. For example, if we typed the function call into python.
+`evens()` returns a string of even numbers up to including max separated by commas. For example, if we typed the function call into the python shell (after loading the file).
 
 ```console
 >>> evens(10)
@@ -68,13 +68,14 @@ Additionally, if we want to change the delim (short for deliminator), from the d
 ### Hints
 
 * You will want to develop the application incrementally! 
+* You can use the code from the [Module 04 Team Activity](https://github.com/CS5001-khoury/TeamActivities/tree/main/Module04) as a starting point, but don't let the differences of printing and concatenating strings confuse you. Also function names may vary.
 * It is alright to get evens and odds working *before* number_string
   * And then modify them later to use number_string. This may seem redundant, but it can help your brain think through the problem.
 * When developing number string, get it working one step at a time
   * does it work with the default arguments. What if you change one? What modifications will you have to make?
 * The trailing comma for an inverted number_string is by far the *hardest* thing to figure out, as an OB1 error is very possible. The trick is that you may have to modify the ending check depending on if the last value is divisible or not.
 
-When we run our tests, we will first test with the default values, and then slowly update various options. **modify `test_number_magic.py`** it is missing some obvious tests! 
+When we run our tests, we will first test with the default values, and then slowly update various options. **Modify [`test_number_magic.py`](../test_number_magic.py)** it is missing some obvious tests! 
 
 ## Part 2: 
 
