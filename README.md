@@ -41,5 +41,5 @@
 
 ## Reflection
 
-Reflection is a powerful tool that has been **repeatedly** documented to help computer scientests learn languages, concepts, and improve their problem solving skills. There is even research that shows CS majors who spend time reflecting often do better at technical interviews, and long term studies show those reflective students also tend to get higher paying jobs over time. It is also a great way to help you learn how to learn.  Please take a moment to reflect on your progress so far in the course. Write *at least a paragarph* (prose) documenting what you have learned, what areas you have struggled in, and ways you can seek to improve your learning process. 
+Reflection is a powerful tool that has been **repeatedly** documented to help computer scientests learn languages, concepts, and improve their problem solving skills. There is even research that shows CS majors who spend time reflecting often do better at technical interviews, and long term studies show those reflective students also tend to get higher paying jobs over time. It is also a great way to help you learn how to learn.  Please take a moment to reflect on your progress so far in the course. Write *at least a paragraph* (prose) documenting what you have learned, what areas you have struggled in, and ways you can seek to improve your learning process. 
 
