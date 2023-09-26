@@ -25,7 +25,7 @@ For this part, you will write three functions. These functions are not an applic
 It should also *default* to 10 is nothing is entered.
 ```console 
 >>> evens()
-'2,4,6,8,10'
+'0,2,4,6,8,10'
 ```
 
 ### Odds
