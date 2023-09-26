@@ -244,7 +244,7 @@ def computer_play(number: int, max_attempts: int, min_val: int, max_val: int) ->
     """
     pass
 
-
+# this is completed correctly, and you do not have to modify it - use it as an example for loops. 
 def main() -> None:
     """Main driver for the program.
 
@@ -261,7 +261,20 @@ def main() -> None:
 
     print(WELCOME_PROMPT)
     option = get_command()
-    ## STUDENT TODO/UPDATE with your Loop here
+    while option != OPTION_QUIT:
+        if option == OPTION_PLAY:
+            play(min_val, max_val, max_attempts)
+        elif option == OPTION_SET_NUM:
+            max_attempts = get_number(SETTING_SET_NUM_TXT)
+        elif option == OPTION_SET_HIGH:
+            max_val = get_number(SETTING_SET_HIGH_TXT)
+        elif option == OPTION_SET_LOW:
+            min_val = get_number(SETTING_SET_LOW_TXT)
+        elif option == OPTION_RESET:
+            min_val = DEFAULT_MIN
+            max_val = DEFAULT_MAX
+            max_attempts = DEFAULT_ATTEMPTS
+        option = get_command()
 
     print(END_PROMPT)
 
