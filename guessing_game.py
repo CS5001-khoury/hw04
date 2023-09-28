@@ -104,7 +104,7 @@ def play(min_val: int, max_val: int, max_attempts: int) -> None:
     number = get_rnd_number(min_val, max_val)
     h_attempts = human_play(number, max_attempts, min_val, max_val)
     c_attempts = computer_play(number, max_attempts, min_val, max_val)
-    if h_attempts <= c_attempts and h_attempts > -1:
+    if (h_attempts <= c_attempts and h_attempts > -1)  or (h_attempts > -1 and c_attempts < 0):
         print(FEEDBACK_WINNER.format(PLAYER1, h_attempts)) 
     elif c_attempts > -1:
         print(FEEDBACK_WINNER.format(PLAYER2, c_attempts))
