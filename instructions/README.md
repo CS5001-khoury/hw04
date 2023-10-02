@@ -226,7 +226,7 @@ Add (AG) and (MG) next to tiers, add major conditions to meet to pass each tier.
    * files correctly commented 
    * test_number_magic.py is fully completed (check main), with a couple additional tests
    * README.md - questions answered
-   * number_magic evens and odds call number_magic instead of duplicating code
+   * number_magic evens and odds call number_string instead of duplicating code
    * guessing_game correctly uses the global variables (no 'hard coding' in functions)
    * guessing_game is fully completed
    * student provides sample 'run' outputs for guessing_game.py testing runs (only one required, more better)
